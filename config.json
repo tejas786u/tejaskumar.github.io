@@ -8,25 +8,39 @@
     "resumePath": "assets/Tejaskumar_iOS_CV.pdf",
     "profileImage": "assets/img/profile.jpg",
     "location": "Berlin, Germany",
-    "copyright": "2026"
+    "copyright": "2026",
+    "twitter": "@tejas786u",
+    "ogImage": "https://tejaskumar.github.io/assets/img/profile.jpg"
+  },
+
+  "profile": {
+    "name": "Tejaskumar Patel",
+    "title": "Senior iOS Engineer",
+    "designation": "Senior iOS Engineer",
+    "experience": "10+ years of experience in iOS development, team leadership, and project management.",
+    "email": "itejaskumarpatel@gmail.com",
+    "heroShort": "Swift | SwiftUI | Objective-C | Team Lead and Project Management",
+    "heroSubtitle": "Open-source advocate, Docker Captain, and tech mentor with 12+ years helping developers and teams excel in cloud-native technologies across 25+ countries.",
+    "username": "tejaskumar",
+    "usernamePrefix": "tejas786u"
   },
 
   "terminal": {
     "user": "root",
-    "host": "mehul",
+    "host": "tejaskumar",
     "promptPath": "~",
     "footerCommand": "chmod +x life.sh"
   },
 
   "hero": {
-    "badge": "Available for speaking engagements",
-    "heading": ["DevOps &", "Cloud Expert"],
-    "subtitle": "Open-source advocate, Docker Captain, and tech mentor with 12+ years helping developers and teams excel in cloud-native technologies across 25+ countries.",
+    "badge": "Available",
+    "heading": ["Senior iOS Engineer"],
+    "subtitle": "10+ years of experience in iOS development, team leadership, and project management. Passionate about building high-quality apps and mentoring developers.",
     "terminal": [
       { "prompt": true, "command": "whoami", "flag": "" },
       { "prompt": false, "output": "DevOps Engineer | Docker Captain | GDE | Open Source Advocate" },
       { "prompt": true, "command": "uptime", "flag": "--experience" },
-      { "prompt": false, "output": "12+ years, 500+ sessions, 25+ countries, 50K+ developers impacted" }
+      { "prompt": false, "output": "10+ years of Experience | App Development | Team Leading" }
     ],
     "stats": [
       { "value": "500+", "label": "Sessions" },
@@ -35,21 +49,21 @@
       { "value": "4.9", "label": "Rating" }
     ],
     "badges": [
-      { "icon": "fab fa-docker", "label": "Docker Captain", "position": "top" },
-      { "icon": "fab fa-google", "label": "Google Developer Expert", "position": "bottom" }
+      { "icon": "fab fa-docker", "label": "iOS Expert", "position": "top" },
+      { "icon": "fab fa-google", "label": "Swift & SwiftUI Expert", "position": "bottom" }
     ]
   },
 
   "social": {
-    "github": "https://github.com/nomadicmehul",
-    "linkedin": "https://www.linkedin.com/in/nomadicmehul/",
-    "twitter": "https://twitter.com/nomadicmehul",
-    "youtube": "https://www.youtube.com/@nomadicmehul",
-    "instagram": "https://www.instagram.com/nomadicmehul/",
-    "medium": "https://medium.com/@nomadicmehul",
-    "bioLink": "https://bio.link/nomadicmehul",
-    "bookSession": "https://topmate.io/nomadicmehul",
-    "buyMeACoffee": "https://buymeacoffee.com/nomadicmehul"
+    "github": "https://github.com/tejas786u",
+    "linkedin": "https://www.linkedin.com/in/tejas786u/",
+    "twitter": "https://twitter.com/tejas786u",
+    "youtube": "https://www.youtube.com/tejas76u",
+    "instagram": "https://www.instagram.com/tejas786u",
+    "medium": "https://medium.com/@tejas786u",
+    "bioLink": "https://bio.link/tejas786u",
+    "bookSession": "https://topmate.io/tejaskumar",
+    "buyMeACoffee": "https://buymeacoffee.com/tejas786u"
   },
 
   "navigation": [
@@ -111,7 +125,7 @@
 
   "about": {
     "paragraphs": [
-      "I'm Mehul Patel, a DevOps and Cloud expert with over 12 years of hands-on experience in cutting-edge technologies like AWS, Google Cloud, Docker, Kubernetes, Ansible, Jenkins, and Terraform. Sharing knowledge is my driving force.",
+      "I'm Tejaskumar Patel, a DevOps and Cloud expert with over 12 years of hands-on experience in cutting-edge technologies like AWS, Google Cloud, Docker, Kubernetes, Ansible, Jenkins, and Terraform. Sharing knowledge is my driving force.",
       "Through my initiative <strong>CloudCaptain</strong>, I've conducted over 500 sessions across 25+ countries, helping individuals and organizations excel in DevOps and cloud technologies.",
       "I actively organize events and build communities at CNCF Gandhinagar, HashiCorp Gandhinagar, and GDG Cloud Gandhinagar. Currently based in Berlin, I'm focused on AI-powered DevOps, self-healing infrastructure, and Kubernetes security."
     ],

@@ -11,6 +11,92 @@
             return null; // Falls back to HTML defaults
         }
     }
+
+    function getConfigValue(config, path) {
+        if (!config || !path) return '';
+        return path.split('.').reduce((obj, key) => (obj && obj[key] !== undefined ? obj[key] : null), config) || '';
+    }
+
+    function augmentConfig(config) {
+        if (!config) return config;
+        const profile = config.profile || {};
+        config.site = config.site || {};
+
+        if (profile.name && profile.designation) {
+            config.site.title = `${profile.name} — ${profile.designation}`;
+        }
+        if ((!config.site.description || !config.site.description.trim()) && profile.experience) {
+            config.site.description = profile.experience;
+        }
+        if (!config.site.author && profile.name) {
+            config.site.author = profile.name;
+        }
+        if (!config.site.keywords && profile.name && profile.designation) {
+            config.site.keywords = `${profile.name}, ${profile.designation}, iOS, Swift, SwiftUI, Objective-C, Team Lead, Project Management`;
+        }
+        if (!config.site.email && profile.email) {
+            config.site.email = profile.email;
+        }
+        return config;
+    }
+
+    function applyConfigBindings(config) {
+        if (!config) return;
+
+        document.querySelectorAll('[data-config-key]').forEach(el => {
+            const value = getConfigValue(config, el.dataset.configKey);
+            if (value) el.textContent = value;
+        });
+
+        document.querySelectorAll('[data-config-html]').forEach(el => {
+            const value = getConfigValue(config, el.dataset.configHtml);
+            if (value) el.innerHTML = value;
+        });
+
+        document.querySelectorAll('[data-config-href]').forEach(el => {
+            const value = getConfigValue(config, el.dataset.configHref);
+            if (value) {
+                if (el.tagName === 'LINK') {
+                    el.href = value;
+                } else if (el.tagName === 'A') {
+                    el.href = value;
+                }
+            }
+        });
+
+        document.querySelectorAll('[data-config-src]').forEach(el => {
+            const value = getConfigValue(config, el.dataset.configSrc);
+            if (value) el.src = value;
+        });
+
+        document.querySelectorAll('[data-config-alt]').forEach(el => {
+            const value = getConfigValue(config, el.dataset.configAlt);
+            if (value) el.alt = `Photo of ${value}`;
+        });
+
+        document.querySelectorAll('[data-config-meta]').forEach(el => {
+            const value = getConfigValue(config, el.dataset.configMeta);
+            if (value) el.content = value;
+        });
+
+        document.querySelectorAll('[data-config-mailto]').forEach(el => {
+            const value = getConfigValue(config, el.dataset.configMailto);
+            if (value) el.href = `mailto:${value}`;
+        });
+
+        const titleElements = document.querySelectorAll('[data-config-title]');
+        if (titleElements.length > 0 && config.site && config.site.title) {
+            document.title = config.site.title;
+        }
+    }
+
+    function applySiteConfig(config) {
+        const augmented = augmentConfig(config);
+        if (augmented) {
+            window.__siteConfig = augmented;
+            applyConfigBindings(augmented);
+        }
+    }
     
     // Mobile menu toggle
     window.toggleMenu = function() {
@@ -39,8 +125,10 @@
         });
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
     
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', async () => {
         document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+        const config = await loadConfig();
+        applySiteConfig(config);
     });
     
     // Re-export observer for dynamically added elements

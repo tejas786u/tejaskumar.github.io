@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Personal portfolio website for Mehul Patel — a static HTML/CSS/JS site deployed on GitHub Pages with a terminal/hacker aesthetic theme.
+Personal portfolio website for Tejaskumar Patel — a static HTML/CSS/JS site deployed on GitHub Pages with a terminal/hacker aesthetic theme.
 
 **URL:** https://nomadicmehul.github.io
 **Hosting:** GitHub Pages (no build step)
@@ -41,7 +41,7 @@ Personal portfolio website for Mehul Patel — a static HTML/CSS/JS site deploye
 │   ├── img/profile.jpg     # Profile photo
 │   ├── favicon.svg         # SVG favicon (terminal prompt)
 │   ├── slides/             # Slide decks for speaking events (PDF/PPTX)
-│   └── Mehul_Patel_Resume.pdf
+│   └── Tejaskumar_iOS_CV.pdf
 │
 ├── _pages/                 # Markdown content pages (about, blog, etc.)
 └── .github/                # GitHub workflows

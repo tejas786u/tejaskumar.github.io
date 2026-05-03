@@ -21,7 +21,7 @@ social: true # includes social icons at the bottom of the page
 
 ## Building the Future of Cloud Technology 🚀
 
-Hey there! I'm **Mehul Patel**, a passionate DevOps & Cloud Expert with over **12 years of experience** helping developers and organizations excel in modern cloud technologies.
+Hey there! I'm **Tejaskumar Patel**, a passionate DevOps & Cloud Expert with over **12 years of experience** helping developers and organizations excel in modern cloud technologies.
 
 ### What I Do
 
