@@ -1,11 +1,11 @@
 {
   "site": {
-    "title": "Mehul Patel",
-    "tagline": "DevOps & Cloud Expert",
-    "description": "Docker Captain | GDE | AWS Community Builder | 500+ Sessions across 25+ Countries",
-    "url": "https://nomadicmehul.github.io",
-    "email": "contact@mehulpatel.dev",
-    "resumePath": "assets/Mehul_Patel_Resume.pdf",
+    "title": "Tejaskumar Patel",
+    "tagline": "Senior iOS Engineer",
+    "description": "Swift | SwiftUI | Objective-C | Team Lead and Project Management",
+    "url": "https://tejaskumar.github.io",
+    "email": "itejaskumarpatel@gmail.com",
+    "resumePath": "assets/Tejaskumar_iOS_CV.pdf",
     "profileImage": "assets/img/profile.jpg",
     "location": "Berlin, Germany",
     "copyright": "2026"
